@@ -13,7 +13,9 @@ var uri = "http://rest-pele-easj-dk.azurewebsites.net/api/cars";
 
 let buttonElement = document.getElementById("getAllButton") as HTMLButtonElement;
 
-buttonElement.addEventListener('click',showAllCars);
+buttonElement.addEventListener('click',() => {
+    
+});
 
 function showAllCars():void{
     axios.get<ICar[]>(uri)
